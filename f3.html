@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password - MasterMind</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: rgb(81, 189, 206);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Reset Password Form */
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            background-color: #7fcddd;
+            background-image: url('ww.jpeg'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire container */
+            background-repeat: no-repeat; /* Ensures the background does not repeat */
+            background-position: center; /* Centers the background image */
+            background-attachment: fixed; 
+        }
+
+        .reset-password-form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #6fd6e4;
+            background-color: transparent;
+        }
+
+        .reset-password-form h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-align: center;
+            color: #66e5e3;
+        }
+
+        .reset-password-form input[type="text"],
+        .reset-password-form input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #6fd6e4;
+            border-radius: 4px;
+            
+
+        }
+
+        .reset-password-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #6de6f1;
+            color: rgb(19, 18, 18);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .reset-password-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>MasterMind</h1>
+    </nav>
+
+    <!-- Reset Password Form -->
+    <div class="container">
+        <form class="reset-password-form">
+            <h2>Reset Password</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="New Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <a href="http://127.0.0.1:5500/f1.html">
+            <button type="button">Submit</button></a>
+        </form>
+    </div>
+</body>
+</html>

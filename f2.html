@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MasterMind</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #222020;
+            color: rgb(144, 224, 137);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Signup Form */
+        .container {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('leaf.jpeg');
+            padding: 20px;
+            background-color: #f9f9f9;
+            background-repeat: no-repeat; /* Ensures the background does not repeat */
+            background-attachment: fixed;  /* Ensures the image covers the entire container */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .signup-form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #274f28;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        .signup-form h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-align: center;
+            color: green;
+        }
+
+        .signup-form input[type="text"],
+        .signup-form input[type="password"],
+        .signup-form input[type="email"],
+        .signup-form input[type="tel"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #aff0a1;
+            color: rgb(12, 14, 11);
+            background-color: rgb(60, 78, 60);
+            border-radius: 4px;
+        }
+        .signup-form input::placeholder {
+    color: #d3eed6; /* Change this to desired color */
+    opacity: 1; /* Ensures full opacity for the placeholder */
+}
+
+
+        /* Updated Register Button Style */
+        .signup-form button {
+            width: 100%;
+            padding: 10px 30px; /* Increase left and right padding for oval shape */
+            background-color: #57961c;
+            color: white;
+            border: none;
+            border-radius: 50px; /* Rounded corners for oval shape */
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .signup-form button:hover {
+            background-color: #f0e1e1;
+            color: rgb(44, 41, 41);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>MasterMind</h1>
+    </nav>
+
+    <!-- Signup Form -->
+    <div class="container">
+        <form class="signup-form">
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="tel" placeholder="Mobile Number" required>
+            <input type="email" placeholder="Email ID" required>
+            
+            <!-- Updated Register Button -->
+            <button type="button">Register</button>
+        </form>
+    </div>
+</body>
+</html>
